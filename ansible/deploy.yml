@@ -5,9 +5,13 @@
   become_user: root
 
   vars:
-    ansistrano_deploy_from: /var/www/html/ansistrano-deploy/app/
-    ansistrano_deploy_to: /var/www/html/app
+    #ansistrano_deploy_from: /var/www/html/ansistrano-deploy/app/ #ONLY TO LOCAL DEPLOY
+    ansistrano_deploy_to: "/var/www/html/app"
     ansistrano_keep_releases: 3
+    ansistrano_deploy_via: git
+
+    ansistrano_git_repo: "https://github.com/jonathansanchez/ansistrano-deploy.git"
+    ansistrano_git_branch: 0a021df561326ea1b4e49eae64367e296daccca1 #NAME FROM branch OR hash commit
 
   roles:
     - carlosbuenosvinos.ansistrano-deploy
