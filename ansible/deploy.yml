@@ -5,12 +5,9 @@
   become_user: root
 
   vars:
-    #ansistrano_deploy_from: /var/www/html/ansistrano-deploy/app/
+    ansistrano_deploy_from: /var/www/html/ansistrano-deploy/app/
     ansistrano_deploy_to: /var/www/html/app
     ansistrano_keep_releases: 3
-
-    ansistrano_git_repo: git@github.com:jonathansanchez/ansistrano-deploy.git
-    ansistrano_git_branch: master # What version of the repository to check out. This can be the full 40-character SHA-1 hash, the literal string HEAD, a branch name, or a tag name
 
   roles:
     - carlosbuenosvinos.ansistrano-deploy
