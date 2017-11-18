@@ -1,0 +1,13 @@
+---
+- name: Deploy Production
+  hosts: all
+  become: true
+  become_user: root
+
+  vars:
+    ansistrano_deploy_from: /var/www/html/ansistrano-deploy/app/
+    ansistrano_deploy_to: /var/www/html/blog
+    ansistrano_keep_releases: 3
+
+  roles:
+    - carlosbuenosvinos.ansistrano-deploy
