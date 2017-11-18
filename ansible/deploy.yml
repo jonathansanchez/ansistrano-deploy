@@ -6,7 +6,7 @@
 
   vars:
     ansistrano_deploy_from: /var/www/html/ansistrano-deploy/app/
-    ansistrano_deploy_to: /var/www/html/blog
+    ansistrano_deploy_to: /var/www/html/app
     ansistrano_keep_releases: 3
 
   roles:
