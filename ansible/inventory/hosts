@@ -1,2 +1,6 @@
 [production]
-10.0.0.90   ansible_ssh_private_key_file=/vagrant/provision
+10.0.0.90   ansible_ssh_private_key_file=/vagrant/provision #a vagrant machine
+10.0.0.91   ansible_ssh_user=root ansible_ssh_pass=passw0rd  #a external server
+
+[aws]
+34.252.229.226   ansible_ssh_private_key_file=/vagrant/provision_key.pem ansible_ssh_user=centos #an AWS machine
