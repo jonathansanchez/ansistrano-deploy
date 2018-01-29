@@ -11,7 +11,7 @@
     ansistrano_deploy_via: git
 
     ansistrano_git_repo: "https://github.com/jonathansanchez/ansistrano-deploy.git"
-    ansistrano_git_branch: 0a021df561326ea1b4e49eae64367e296daccca1 #NAME FROM branch OR hash commit
+    ansistrano_git_branch: "0a021df561326ea1b4e49eae64367e296daccca1" | "master"#NAME FROM branch OR hash commit
 
   roles:
     - carlosbuenosvinos.ansistrano-deploy
